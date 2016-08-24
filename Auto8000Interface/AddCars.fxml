@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Accordion prefHeight="800.0" prefWidth="1280.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="619.0" prefWidth="1527.0" text="CAR INFO">
+            <content>
+              <AnchorPane prefHeight="431.0" prefWidth="1264.0">
+                     <children>
+                        <TextField fx:id="getStock" layoutX="137.0" layoutY="8.0" />
+                        <TextField fx:id="getMake" layoutX="137.0" layoutY="71.0" />
+                        <TextField fx:id="getModel" layoutX="137.0" layoutY="131.0" />
+                        <TextField fx:id="getTrim" layoutX="137.0" layoutY="191.0" />
+                        <TextField fx:id="getOdometer" layoutX="137.0" layoutY="250.0" />
+                        <TextField fx:id="getDriveTrain" layoutX="597.0" layoutY="10.0" />
+                        <TextField fx:id="getBodyType" layoutX="597.0" layoutY="72.0" />
+                        <TextField fx:id="getFuelType" layoutX="597.0" layoutY="132.0" />
+                        <Label layoutX="56.0" layoutY="16.0" text="Stock#" />
+                        <Label layoutX="56.0" layoutY="81.0" text="Make:" />
+                        <Label layoutX="46.0" layoutY="139.0" text="Model:" />
+                        <Label layoutX="66.0" layoutY="199.0" text="Trim:" />
+                        <Label layoutX="8.0" layoutY="258.0" text="Odometer:" />
+                        <Label layoutX="470.0" layoutY="20.0" text="Drivetrain:" />
+                        <Label layoutX="466.0" layoutY="80.0" text="Body Type:" />
+                        <Label layoutX="479.0" layoutY="138.0" text="Fuel Type:" />
+                        <Label layoutX="461.0" layoutY="379.0" text="Passengers:" />
+                        <Label layoutX="516.0" layoutY="321.0" text="Doors:" />
+                        <Label layoutX="447.0" layoutY="261.0" text="Transmission:" />
+                        <Label layoutX="512.0" layoutY="199.0" text="Engine:" />
+                        <TextField fx:id="getEngine" layoutX="597.0" layoutY="191.0" />
+                        <TextField fx:id="getTransmission" layoutX="597.0" layoutY="251.0" />
+                        <TextField fx:id="getDoors" layoutX="597.0" layoutY="313.0" />
+                        <TextField fx:id="getPassengers" layoutX="597.0" layoutY="373.0" />
+                        <TextField fx:id="getExtColour" layoutX="200.0" layoutY="513.0" />
+                        <TextField fx:id="getIntColour" layoutX="200.0" layoutY="575.0" />
+                        <Label layoutX="28.0" layoutY="521.0" text="Exterior Colour:" />
+                        <Label layoutX="29.0" layoutY="581.0" text="Interior Colour:" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="696.0" prefWidth="1527.0" text="OVERVIEW">
+               <content>
+              <AnchorPane prefHeight="495.0" prefWidth="1033.0">
+                     <children>
+                        <CheckBox layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleCarProof" text="Clean Car Proof" />
+                        <CheckBox layoutX="286.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleAccidentFree" text="Accident Free" />
+                        <CheckBox layoutX="14.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleAirConditioning" text="Air Conditioning" />
+                        <CheckBox layoutX="286.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleCruiseControl" text="Cruise Control" />
+                        <CheckBox layoutX="563.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleTractionControl" text="Traction Control" />
+                        <CheckBox layoutX="14.0" layoutY="128.0" mnemonicParsing="false" onAction="#handlePowerMirrors" text="Power Mirrors" />
+                        <CheckBox layoutX="286.0" layoutY="128.0" mnemonicParsing="false" onAction="#handlePowerMoonRoof" text="Power Moon Roof" />
+                        <CheckBox layoutX="563.0" layoutY="128.0" mnemonicParsing="false" onAction="#handlePowerWindows" text="Power Windows" />
+                        <CheckBox layoutX="14.0" layoutY="171.0" mnemonicParsing="false" onAction="#handlePowerLocks" text="Power Locks" />
+                        <CheckBox layoutX="286.0" layoutY="171.0" mnemonicParsing="false" onAction="#handlePowerSteering" text="Power Steering" />
+                        <CheckBox layoutX="563.0" layoutY="178.0" mnemonicParsing="false" onAction="#handlePowerBreaks" text="Power Breaks" />
+                        <CheckBox layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleAm" text="AM" />
+                        <CheckBox layoutX="110.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleFm" text="FM" />
+                        <CheckBox layoutX="205.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleCd" text="CD" />
+                        <CheckBox layoutX="286.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleMp3" text="MP3" />
+                        <CheckBox layoutX="389.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleBluetooth" text="Bluetooth" />
+                        <CheckBox layoutX="563.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleUsb" text="USB" />
+                        <CheckBox layoutX="14.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleLeather" text="Leather" />
+                        <CheckBox layoutX="203.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleCloth" text="Cloth" />
+                        <CheckBox layoutX="14.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleRoofRack" text="Roof Rack" />
+                        <CheckBox layoutX="203.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleFogLights" text="Fog Lights" />
+                        <Button layoutX="880.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleInfoSubmit" prefHeight="67.0" prefWidth="232.0" text="Submit" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
