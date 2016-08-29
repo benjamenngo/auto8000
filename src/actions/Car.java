@@ -1,6 +1,7 @@
 package actions;
 
 public class Car {
+	/* -------------------declaring variables---------------------------------------*/
 	private String stock;
 	private String make;
 	private String model;
@@ -36,6 +37,7 @@ public class Car {
 	private String cloth;
 	private String roofRack;
 	private String fogLights;
+	/*------------------------------------Getters and Setters--------------------------------*/
 	public String getStock() {
 		return stock;
 	}
@@ -246,6 +248,8 @@ public class Car {
 	public void setFogLights(String fogLights) {
 		this.fogLights = fogLights;
 	}
+	
+	/*--------------------------------toString Method---------------------------------------------*/
 	@Override
 	public String toString() {
 		return "Stock: " + getStock() + "Make: " + getMake() + "Model: " + getModel()
