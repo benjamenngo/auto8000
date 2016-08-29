@@ -9,23 +9,16 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class CarViewer extends ActionSupport{
 	
-	private int count;
-	private int i=0;
-	public int getCount(){
-		return count;
-	}
-	String genCarView="<td>Car"+i+"</td>";
-	
-
 	public String execute() throws Exception{
+		/*---------------------Connecting to database--------------------------*/
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","test_user","test_password");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","test_user","********");
 			Statement stmt=con.createStatement();
 			ResultSet rs=stmt.executeQuery("SELECT COUNT(*)FROM cars");	
 			
-			while(rs.next()){
-				count=rs.getInt(1);
+			while(rs.next()){             // if the ResultSet has an entry get the String of the entry
+				//get string
 			}
 			
 			con.close();
